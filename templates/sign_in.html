@@ -1,0 +1,124 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- SIGN IN SECTION  -->
+<section class="d-flex justify-content-center align-items-center sign-in mt-5 pt-5" id="sign-in">
+    <div class="container my-5">
+        <div class="row mb-5" style="border: solid 1px #cccccc; border-radius: 10px; box-shadow: 5px 5px 5px #eeeeee;">
+            <div class="col-lg-6 col-12 px-0">
+                <div class="sig-in-pic">
+                    <img style="border-radius: 10px 0px 0px 10px ;" src="{% static 'assets/img/sign_in.png' %}" alt="lady"
+                        class="d-block img-fluid sig-in-img">
+                </div>
+            </div>
+
+            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                <div>
+                    <h2 class="pt-5 fw-bold hero-head text-center mb-5" 
+                        style="color: rgb(16, 2, 73); font-size: 2.7rem;">
+                        Welcome Back
+                    </h2>
+
+                    <div class="form mt-2">
+                        <form action="post">
+                            <div class="inputs container">
+                                
+                                <div class="container pb-3">
+                                    <label class="text-dark input-label d-block pb-2" for="email">Email</label>
+                                    <input class="form-control d-block w-100 p-2 input-field" id="email" name="email" type="text">
+                                </div>
+    
+                                <div class="container pb-2">
+                                    <label class="text-dark input-label d-block pb-2" for="password">Password</label>
+                                    <input class="form-control d-block w-100 p-2 input-field" id="password" name="password"
+                                        type="password">
+                                        <br>
+                                    <a href="#">
+                                        <p class="plan pt-2 text-end forgot-password">
+                                            Forgot password?
+                                        </p>
+                                    </a>
+                                </div>
+    
+                                <div class="container pb-5 mb-5">
+                                    <a href="#">
+                                        <button type="button" class="border-0 sign-in-head w-100">
+                                            <p class="sign-in">
+                                                Sign in
+                                            </p>
+                                        </button>
+                                    </a>
+                                    <p style="font-weight: 500;" class="p-3 text-dark text-center">Don’t have an account?<a
+                                            href="#">
+                                            <span style="font-weight: 600;display: inline-block; padding-left: 0.2rem"
+                                                class="plan forgot-password">Choose a plan</span>
+                                        </a></p>
+                                </div>
+    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row pt-5 mt-3 container-fluid">
+
+        <div class="col-lg-6 col-12">
+            <div class="sig-in-pic">
+                <img style="border-radius: 0.5rem;" src="{% static 'assets/img/sign_in.png' %}" alt="lady"
+                    class="d-block img-fluid sig-in-img">
+            </div>
+        </div>
+
+        <div style="border-radius: 0.5rem; border-top: 0.5px solid rgb(238, 238, 238); border-right: 0.5px solid rgb(238, 238, 238); border-bottom: 0.5px solid rgb(238, 238, 238);"
+            class="container col-lg-6 col-12">
+            <h1 class="pt-5 display-4 fw-bold hero-head text-center">
+                Welcome Back
+            </h1>
+            <div class="form mt-2 p-5 mb-5 pb-5">
+                <form action="post">
+                    <div class="inputs container mb-5 pb-5">
+
+                        <div class="container pb-3">
+                            <label class="text-dark input-label d-block pb-2" for="email">Email</label>
+                            <input class="d-block w-100 p-2 shadow input-field" id="email" name="email" type="text">
+                        </div>
+
+                        <div class="container pb-2">
+                            <label class="text-dark input-label d-block pb-2" for="password">Password</label>
+                            <input class="d-block w-100 p-2 shadow input-field" id="password" name="password"
+                                type="password">
+                            <a href="#">
+                                <p class="plan pt-1 text-end forgot-password">
+                                    Forgot password?
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="container pb-5 mb-5">
+                            <a href="#">
+                                <button type="button" class="border-0 sign-in-head w-100">
+                                    <p class="sign-in">
+                                        Sign in
+                                    </p>
+                                </button>
+                            </a>
+                            <p style="font-weight: 500;" class="p-3 text-dark text-center">Don’t have an account?<a
+                                    href="#">
+                                    <span style="font-weight: 600;display: inline-block; padding-left: 0.2rem"
+                                        class="plan forgot-password">Choose a plan</span>
+                                </a></p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div> -->
+</section>
+
+{% endblock content %}
